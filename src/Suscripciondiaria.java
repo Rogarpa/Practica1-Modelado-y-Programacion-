@@ -3,15 +3,25 @@ public abstract class Suscripciondiaria implements Suscripcion{
 
 
     public void cobrar(){
+        this.cobrarnuevodia();
 
     }
 
     public void cobrarnuevodia(){
+        for(Interna i:suscriptores){
+            if(i.boolean){
+                i.cliente.cobro(i.cobrador.Calculadorcobro());
+            }
+        }
 
     }
 
     public void dejarcontratar(Suscriptor supuestosuscriptor){
-
+        for(Intera i:suscriptores){
+            if(i.boolean && i.cliente==suscriptor){
+                i.boolean;
+            }
+        }
     }
 
 
@@ -23,7 +33,9 @@ public abstract class Suscripciondiaria implements Suscripcion{
 
         boolean contratacionactiva;
 
-        Interna(Suscriptor cliente,Calculadorcobro cobrador,boolean contratacionactiva)
+        public Interna(Suscriptor cliente,Calculadorcobro cobrador,boolean contratacionactiva){
+            
+        }
 
     }
 }
