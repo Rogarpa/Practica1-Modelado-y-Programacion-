@@ -1,6 +1,8 @@
-public class premiumHammazon implements Nivel{
-    public int calcularcobro(){
-
+public class premiumHammazon implements Plan{
+    
+    @Override
+    public int calcularCobro(){
+        return 13;
     }
 
 }

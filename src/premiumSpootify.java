@@ -1,6 +1,8 @@
-public class premiumSpootify implements Nivel{
-    public int calcularcobro(){
+public class premiumSpootify implements Plan{
 
+    @Override
+    public int calcularCobro(){
+        return 4;
     }
 
 }

@@ -1,6 +1,8 @@
 public class normalHammazon implements Nivel{
-    public int calcularcobro(){
 
+    @Override
+    public int calcularcobro(){
+        return 7;
     }
 
 }

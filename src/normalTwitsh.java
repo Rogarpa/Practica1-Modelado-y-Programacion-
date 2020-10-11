@@ -1,6 +1,8 @@
-public class normalTwitsh implements Nivel{
-    public int calcularcobro(){
-
+public class normalTwitsh implements Plan{
+    
+    @Override
+    public int calcularCobro(){
+        return 6;
     }
 
 }

@@ -1,23 +1,23 @@
-public class Netflis extends Suscripciondiaria{
-    List<Interna> suscriptores;
+public class Netflis extends Suscripcion{
 
-    public void 1pantalla(Suscriptor aagregar){
-
+    //FALTA DOCUMENTAR
+    public void 1pantalla(Usuario contratador){
     }
 
-    public void 2pantallas(Suscriptor aagregar){
-
+    //FALTA DOCUMENTAR
+    public void 2pantallas(Usuario contratador){
     }
 
-    public void 3pantallas(Suscriptor aagregar){
-
+    //FALTA DOCUMENTAR
+    public void 3pantallas(Usuario contratador){
     }
 
-    public void cobrarnuevodia(){
-
+    @Override
+    public void cobrar(){
     }
 
-    public void dejarcontrar(Suscriptor supuestocontratador){
-        
+    @Override
+    public void dejarContrar(Usuario  usuarioADescontratar){
     }
+
 }

@@ -1,6 +1,8 @@
-public class premiumYutube implements Nivel{
-    public int calcularcobro(){
+public class premiumYutube implements Plan{
 
+    @Override
+    public int calcularCobro(){
+        return 6;
     }
 
 }

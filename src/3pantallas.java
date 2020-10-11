@@ -1,6 +1,8 @@
-public class 3pantallas implements Nivel{
+public class 3pantallas implements Plan{
+    
+    @Override
     public int calcularcobro(){
-        return 15();
+        return 15;
     }
 
 }

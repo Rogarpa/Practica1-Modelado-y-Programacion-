@@ -1,6 +1,6 @@
-public class normalYutube implements Nivel{
-    public int calcularcobro(){
-
+public class normalYutube implements Plan{
+    public int calcularCobro(){
+        return 0;
     }
 
 }

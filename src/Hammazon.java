@@ -1,20 +1,19 @@
 public class Hammazon extends Suscripciondiaria{
-    List<Interna> suscriptores;
 
-    public void contratarnormal(Suscriptor contratador){
-
-    }
-
-    public void contratarpremium(Suscriptor contratador){
+    public void contratarnormal(Usuario contratador){
 
     }
 
-    public void cobrarnuevodia(){
+    public void contratarpremium(Usuario contratador){
 
     }
 
-    public void dejarcontrar(Suscriptor supuestocontratador){
-        
+    @Override
+    public void cobrar(){
+    }
+
+    @Override
+    public void dejarContrar(Usuario  usuarioADescontratar){
     }
 
 }

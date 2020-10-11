@@ -1,20 +1,19 @@
-public class Twitsh extends Suscripciondiaria{
-    List<Interna> suscriptores;
-
-    public void contratarnormal(Suscriptor contratador){
-
+public class Twitsh extends Suscripcion{
+    
+    //FALTA DOCUMENTAR
+    public void contratarnormal(Usuario contratador){
     }
 
-    public void contratarpremium(Suscriptor contratador){
-
+    //FALTA DOCUMENTAR
+    public void contratarpremium(Usuario contratador){
     }
 
-    public void cobrarnuevodia(){
-
+    @Override
+    public void cobrar(){
     }
 
-    public void dejarcontrar(Suscriptor supuestocontratador){
-        
+    @Override
+    public void dejarContrar(Usuario  usuarioADescontratar){
     }
 
 }

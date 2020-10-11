@@ -1,6 +1,8 @@
-public class premiumTwitsh implements Nivel{
-    public int calcularcobro(){
+public class premiumTwitsh implements Plan{
 
+    @Override
+    public int calcularCobro(){
+        return 10;
     }
 
 }
