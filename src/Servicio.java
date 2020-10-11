@@ -1,3 +1,5 @@
+package src;
+import src.*;
 public interface Servicio{
 
     /**

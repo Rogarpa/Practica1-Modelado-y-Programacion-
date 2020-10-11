@@ -1,15 +1,17 @@
+package src; 
+import src.*;
 public class Netflis extends Suscripcion{
 
     //FALTA DOCUMENTAR
-    public void 1pantalla(Usuario contratador){
+    public void contratarUnaPantalla(Usuario contratador){
     }
 
     //FALTA DOCUMENTAR
-    public void 2pantallas(Usuario contratador){
+    public void contratarDosPantallas(Usuario contratador){
     }
 
     //FALTA DOCUMENTAR
-    public void 3pantallas(Usuario contratador){
+    public void contratarTresPantallas(Usuario contratador){
     }
 
     @Override
@@ -17,7 +19,7 @@ public class Netflis extends Suscripcion{
     }
 
     @Override
-    public void dejarContrar(Usuario  usuarioADescontratar){
+    public void dejarContratar(Usuario  usuarioADescontratar){
     }
 
 }

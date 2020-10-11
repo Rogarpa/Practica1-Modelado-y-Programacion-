@@ -1,3 +1,5 @@
+package src;
+import src.*;
 public class Yutube extends Suscripcion {
     
     //FALTA DOCUMENTAR
@@ -13,7 +15,8 @@ public class Yutube extends Suscripcion {
     }
 
     @Override
-    public void dejarContrar(Usuario  usuarioADescontratar){
+    public void dejarContratar(Usuario  usuarioADescontratar){
+        System.out.println(0);
     }
 
 }

@@ -1,4 +1,6 @@
-public class normalTwitsh implements Plan{
+package src; 
+import src.*;
+public class NormalTwitsh implements Plan{
     
     @Override
     public int calcularCobro(){

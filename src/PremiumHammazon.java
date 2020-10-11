@@ -1,4 +1,6 @@
-public class premiumHammazon implements Plan{
+package src; 
+import src.*;
+public class PremiumHammazon implements Plan{
     
     @Override
     public int calcularCobro(){

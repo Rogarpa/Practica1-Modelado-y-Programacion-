@@ -1,3 +1,5 @@
+package src;
+import src.*;
 public interface Usuario{
     
     /**
@@ -19,5 +21,5 @@ public interface Usuario{
     void eliminarServicio(Servicio s);
 
     //FALTA DOCUMENTAR
-    public String getNombre()
+    public String getNombre();
 }

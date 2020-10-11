@@ -1,4 +1,6 @@
-public class Hammazon extends Suscripciondiaria{
+package src; 
+import src.*;
+public class Hammazon extends Suscripcion{
 
     public void contratarnormal(Usuario contratador){
 
@@ -13,7 +15,7 @@ public class Hammazon extends Suscripciondiaria{
     }
 
     @Override
-    public void dejarContrar(Usuario  usuarioADescontratar){
+    public void dejarContratar(Usuario  usuarioADescontratar){
     }
 
 }

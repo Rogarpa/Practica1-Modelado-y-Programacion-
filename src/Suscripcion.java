@@ -1,16 +1,20 @@
+package src; 
+import src.CalculadorCobro;
+import java.util.List;
 public abstract class Suscripcion implements Servicio{
     protected List<Contrato> contratosActivos;
     protected List<Usuario> contratosPasivos;
-    protected Calculadorcobro lectorDePlanes;
+    protected CalculadorCobro lectorDePlanes;
     protected String sugerencias;
     
     //FALTA DOCUMENTAR
-    void enviarRecomendaciones();
+    public void enviarRecomendaciones(){
+    }
 
     protected class Contrato{
         public Usuario contratador;
-        public Plan planContratado
-        public String nombrePlan
+        public Plan planContratado;
+        public String nombrePlan;
 
         //FALTA DOCUMENTAR
         public Contrato(Usuario aSuscribir, Plan planAContratar, String nombrePlan){

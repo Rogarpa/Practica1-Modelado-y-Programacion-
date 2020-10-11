@@ -1,3 +1,5 @@
+package src; 
+import src.*;
 public class Twitsh extends Suscripcion{
     
     //FALTA DOCUMENTAR
@@ -13,7 +15,7 @@ public class Twitsh extends Suscripcion{
     }
 
     @Override
-    public void dejarContrar(Usuario  usuarioADescontratar){
+    public void dejarContratar(Usuario  usuarioADescontratar){
     }
 
 }

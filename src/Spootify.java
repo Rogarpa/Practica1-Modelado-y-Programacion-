@@ -1,3 +1,6 @@
+package src; 
+import java.util.List; 
+import src.*;
 public class Spootify extends Suscripcion{
 
     //FALTA DOCUMENTAR
@@ -13,7 +16,7 @@ public class Spootify extends Suscripcion{
     }
 
     @Override
-    public void dejarContrar(Usuario  usuarioADescontratar){
+    public void dejarContratar(Usuario  usuarioADescontratar){
     }
 
 }

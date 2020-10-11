@@ -1,4 +1,6 @@
-public class premiumYutube implements Plan{
+package src; 
+import src.*;
+public class PremiumYutube implements Plan{
 
     @Override
     public int calcularCobro(){

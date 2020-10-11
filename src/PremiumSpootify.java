@@ -1,4 +1,6 @@
-public class premiumSpootify implements Plan{
+package src; 
+import src.*;
+public class PremiumSpootify implements Plan{
 
     @Override
     public int calcularCobro(){

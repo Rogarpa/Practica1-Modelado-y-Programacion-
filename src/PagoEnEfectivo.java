@@ -1,3 +1,6 @@
+package src;
+import java.util.List;
+import src.*;
 public class PagoEnEfectivo implements Usuario{
 
     protected List<Servicio> serviciosSuscritos;
@@ -26,7 +29,7 @@ public class PagoEnEfectivo implements Usuario{
     }
 
     @Override
-    void eliminarServicio(Servicio s){
+    public void eliminarServicio(Servicio s){
     }
 
     @Override
