@@ -7,7 +7,9 @@ public abstract class Suscripcion implements Servicio{
     protected CalculadorCobro lectorDePlanes;
     protected String sugerencias;
     
-    //FALTA DOCUMENTAR
+    /** 
+     * Se encarga de enviar a los Usuarios mediante su método mensaje() una recomendación.
+     */
     public void enviarRecomendaciones(){
     }
 

@@ -3,8 +3,9 @@ import src.*;
 public interface Usuario{
     
     /**
-    *Se encarga de cobrar al usuario una cifra.
+    *Se encarga de cobrar al usuario una cifra. Si el usuario no tiene fondos suficiente lanza la excepcion
     *@param cobrodiariodeservicio el cobro solicitado.
+    *@throws FondosInsuficientes si el Usuario no es capaz de pagar el cobro. 
     */
     void cobro(int cobroDiarioDeServicio);
 
@@ -22,4 +23,6 @@ public interface Usuario{
 
     //FALTA DOCUMENTAR
     public String getNombre();
+
+    public void mensaje();
 }
