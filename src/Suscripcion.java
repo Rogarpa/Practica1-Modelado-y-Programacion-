@@ -13,9 +13,9 @@ public abstract class Suscripcion implements Servicio{
     * Se encarga de enviar a los Usuarios mediante su método mensaje() una recomendación.
     */
     public void enviarRecomendaciones(){
-        int i = 0;
+        int i = 1;
         for(Contrato aRecomendar: contratosActivos){
-            aRecomendar.contratador.mensaje("Te recomendamos: " + sugerencias[i++]);
+            aRecomendar.contratador.mensaje(sugerencias[0] + " te recomienda " + aRecomendar.contratador.getNombre() + ": " + sugerencias[i++]);
         }
     }
     
@@ -27,13 +27,13 @@ public abstract class Suscripcion implements Servicio{
         Contrato nuevoContrato = new Contrato(contratador, planASuscribir, nombrePlan);
         
         if(contratosPasivos.contains(contratador)){
-            System.out.println(mensajeRebienvenida);
+            System.out.println(mensajeRebienvenida + contratador.getNombre());
             contratador.agregarServicio(this);
             contratosPasivos.remove(contratador);
         }
         
         
-        System.out.println(mensajeSuscripciónNueva + " "+ nombrePlan);
+        System.out.println(mensajeSuscripciónNueva + " "+ nombrePlan + " " + contratador.getNombre() );
         contratosActivos.add(nuevoContrato);
     }
     
@@ -54,7 +54,7 @@ public abstract class Suscripcion implements Servicio{
                 dejarContratar(usuarioACobrar);
             }
             
-            System.out.println(String.format(mensajecobro, pago) + " " + c.nombrePlan);
+            System.out.println(String.format(mensajecobro, pago) + " " + c.nombrePlan + " de " + usuarioACobrar.getNombre());
             enviarRecomendaciones();
             
         }

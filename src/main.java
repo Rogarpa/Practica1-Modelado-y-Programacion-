@@ -82,6 +82,8 @@ public class main{
 
         System.out.println("///////////////////////////////////////////////////");
         System.out.println("Día 2");
+        for(Servicio acobrar: listaservicios) acobrar.cobrar();
+
         
         spootify.contratarnormal(Diego);
         netflis.dejarContratar(Diego);
@@ -92,17 +94,22 @@ public class main{
         
         System.out.println("///////////////////////////////////////////////////");
         System.out.println("Día 3");
+        for(Servicio acobrar: listaservicios) acobrar.cobrar();
+
         
         netflis.contratarCuatroPantallas(Diego);
         
     
         System.out.println("///////////////////////////////////////////////////");
         System.out.println("Día 4");
+        for(Servicio acobrar: listaservicios) acobrar.cobrar();
+
 
 
 
         System.out.println("///////////////////////////////////////////////////");
         System.out.println("Día 5");
+        for(Servicio acobrar: listaservicios) acobrar.cobrar();
         
         
     
