@@ -1,14 +1,28 @@
 
-package src; 
-import src.*; 
+package src;
+import src.*;
+import java.util.LinkedList;
 public class Yutube extends Suscripcion {
+    
+    String bienvenidoDeVuelta = "Bienvenido de vuelta a Yutube";
+    String tipoSuscripcion = "Gracias por suscribirte al plan";
+    String mensajecobro = "Se cobraron %d de el plan";
+    String mensajeDespedida = "Lamentamos que dejes el servicio de Yutube";
+    
+    public Yutube(){
+        contratosActivos = new LinkedList<>();
+        contratosPasivos = new LinkedList<>(); 
+    }
+    
     
     /**
     *Método que se encarga cuando un usuario contrata el plan
     *normal de Yutube.
     *@param contratador el usuario que contrata el plan.
     */
+
     public void contratarnormal(Usuario contratador){
+        super.contratarAux(bienvenidoDeVuelta, "normal de Yutube", tipoSuscripcion, contratador, new NormalYutube());
     }
     
     /**
@@ -17,6 +31,7 @@ public class Yutube extends Suscripcion {
     *@param contratador el usuario que contrata el plan.
     */
     public void contratarpremium(Usuario contratador){
+        super.contratarAux(bienvenidoDeVuelta, "premium de Yutube", tipoSuscripcion, contratador, new PremiumYutube());
     }
     
     @Override
@@ -33,11 +48,16 @@ public class Yutube extends Suscripcion {
     
     @Override
     public void cobrar(){
+        super.cobrarAux(mensajecobro);
     }
     
     @Override
-    public void dejarContratar(Usuario  usuarioADescontratar){
-        System.out.println(0);
+    public void dejarContratar(Usuario usuarioADescontratar){
+    super.dejarContratarAux(usuarioADescontratar, this, mensajeDespedida);
     }
     
+    
+    
 }
+
+

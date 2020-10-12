@@ -27,6 +27,12 @@ public class PagoEnEfectivo implements Usuario{
                 }
         }
         serviciosSuscritos.add(s);
+            
+    }
+    
+    @Override
+    public void mensaje(String mensajeAImprimir){
+        System.out.println(mensaje);
     }
 
     @Override
@@ -47,9 +53,5 @@ public class PagoEnEfectivo implements Usuario{
         }
     }
 
-    @Override
-    public void mensaje(String c){
-        System.out.println(c);
-    }
 
 }

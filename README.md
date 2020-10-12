@@ -15,4 +15,3 @@ sea posible notificar a las demas clases si el estado de la clase Sujeto cambia.
 Strategy:no puede tener más de un contexto simultaneamente
 
 Observer:no puede, los observadores no pueden tener comunicación entre sí.
-c
