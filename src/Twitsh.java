@@ -1,4 +1,6 @@
 
+package src; 
+import src.*; 
 public class Twitsh extends Suscripcion{
 
     /**
@@ -19,7 +21,8 @@ public class Twitsh extends Suscripcion{
 
     @Override
     public void enviarRecomendaciones(){
-        sugerencias[0]="Como nuevo streamer tenemos a tripasecatime";
+        sugerencias = new String[5];
+sugerencias[0]="Como nuevo streamer tenemos a tripasecatime";
         sugerencias[1]="Prueba en la Sección de: Nuevos Streamers";
         sugerencias[2]="¿Empezando tu experiencia en Twitsh?.Prueba Aleatorios.";
         sugerencias[3]="Para ver lo que suben tus streamers favoritos:Ve a la sección notificaciones.";

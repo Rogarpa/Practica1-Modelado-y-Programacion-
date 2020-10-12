@@ -1,4 +1,6 @@
 
+package src; 
+import src.*; 
 public class TresPantallasNetflis implements Plan{
 
     @Override

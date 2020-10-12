@@ -1,4 +1,5 @@
-
+package src; 
+import src.*; 
 import java.util.List;
 public abstract class Suscripcion implements Servicio{
     protected List<Contrato> contratosActivos;

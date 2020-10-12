@@ -1,4 +1,6 @@
 
+package src; 
+import src.*; 
 import java.util.List;
 public class PagoEnEfectivo implements Usuario{
 

@@ -1,4 +1,6 @@
 
+package src; 
+import src.*; 
 public class NormalHammazon implements Plan{
 
     @Override
