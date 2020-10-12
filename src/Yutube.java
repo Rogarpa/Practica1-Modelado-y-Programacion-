@@ -3,15 +3,18 @@ package src;
 import src.*;
 import java.util.LinkedList;
 public class Yutube extends Suscripcion {
-    
+
     String bienvenidoDeVuelta = "Bienvenido de vuelta a Yutube";
     String tipoSuscripcion = "Gracias por suscribirte al plan";
     String mensajecobro = "Se cobraron %d de el plan";
     String mensajeDespedida = "Lamentamos que dejes el servicio de Yutube";
-    
+
+    /**
+    *Constructor vacio de la Clase.
+    */
     public Yutube(){
         contratosActivos = new LinkedList<>();
-        contratosPasivos = new LinkedList<>(); 
+        contratosPasivos = new LinkedList<>();
         sugerencias = new String[5];
         sugerencias[0]="Prueba memes para ver los videos aleatorios más recientes.";
         sugerencias[1]="Ver a continuación:Destacados de la Semana.";
@@ -19,8 +22,8 @@ public class Yutube extends Suscripcion {
         sugerencias[3]="Para ver a tus Yutuberos preferidos ve a Suscripciones.";
         sugerencias[4]="Revisa tu historial por si no terminaste de ver un video.";
     }
-    
-    
+
+
     /**
     *Método que se encarga cuando un usuario contrata el plan
     *normal de Yutube.
@@ -30,7 +33,7 @@ public class Yutube extends Suscripcion {
     public void contratarnormal(Usuario contratador){
         super.contratarAux(bienvenidoDeVuelta, "normal de Yutube", tipoSuscripcion, contratador, new NormalYutube());
     }
-    
+
     /**
     *Método que se encarga cuando un usuario contrata el plan
     *premium de Yutube.
@@ -39,19 +42,17 @@ public class Yutube extends Suscripcion {
     public void contratarpremium(Usuario contratador){
         super.contratarAux(bienvenidoDeVuelta, "premium de Yutube", tipoSuscripcion, contratador, new PremiumYutube());
     }
-    
+
     @Override
     public void cobrar(){
         super.cobrarAux(mensajecobro);
     }
-    
+
     @Override
     public void dejarContratar(Usuario usuarioADescontratar){
     super.dejarContratarAux(usuarioADescontratar, this, mensajeDespedida);
     }
-    
-    
-    
+
+
+
 }
-
-
