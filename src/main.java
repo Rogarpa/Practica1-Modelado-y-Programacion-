@@ -74,10 +74,38 @@ public class main{
         System.out.println("///////////////////////////////////////////////////");
         System.out.println("Día 1");
         for(Servicio acobrar: listaservicios) acobrar.cobrar();
+        
+        twitsh.contratarnormal(Diego);
+        spootify.contratarpremium(Erika);
+        
+        yutube.contratarpremium(Erika);
 
+        System.out.println("///////////////////////////////////////////////////");
+        System.out.println("Día 2");
+        
+        spootify.contratarnormal(Diego);
+        netflis.dejarContratar(Diego);
+
+        netflis.dejarContratar(Erika);
+        hammazon.contratarpremium(Erika);
+        twitsh.contratarpremium(Erika);
+        
+        System.out.println("///////////////////////////////////////////////////");
+        System.out.println("Día 3");
+        
+        netflis.contratarCuatroPantallas(Diego);
+        
+    
+        System.out.println("///////////////////////////////////////////////////");
+        System.out.println("Día 4");
+
+
+
+        System.out.println("///////////////////////////////////////////////////");
+        System.out.println("Día 5");
         
         
-        
+    
     }
 
 

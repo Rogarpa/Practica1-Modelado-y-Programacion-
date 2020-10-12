@@ -1,6 +1,8 @@
 
 package src; 
-import src.*; 
+import src.*;
+
+import java.util.LinkedList;
 import java.util.List;
 public class PagoEnEfectivo implements Usuario{
 
@@ -12,6 +14,7 @@ public class PagoEnEfectivo implements Usuario{
     public PagoEnEfectivo(int dineroDisponible,String nombre){
         this.dineroDisponible=dineroDisponible;
         this.nombre=nombre;
+        serviciosSuscritos = new LinkedList<>();
     }
 
     @Override
