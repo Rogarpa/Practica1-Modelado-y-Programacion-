@@ -20,12 +20,17 @@ public class PagoEnEfectivo implements Usuario{
 
     @Override
     public void agregarServicio(Servicio s){
-        //for(Servicio contratadoPreviamente:serviciosSuscritos){
-        //        if(contratadoPreviamente==s){
-        //            return;
-        //        }
-        //}
-        //serviciosSuscritos.add(s);
+        
+        
+        
+        
+        
+        
+    }
+    
+    @Override
+    public void mensaje(String mensaje){
+        System.out.println(mensaje);
     }
 
     @Override
@@ -33,15 +38,12 @@ public class PagoEnEfectivo implements Usuario{
     }
 
     @Override
-    public void cobro(int cobrodiariodeservicio){
-
-        //if(dineroDisponible <= cobrodiarioservicio){
-        //    throw new FondosInsuficientesException();
-        //}else{
-        //        dineroDisponible += - cobrodeservicios;
-        //}
+    public void cobro(int cobroDeServicios){
+        if(dineroDisponible <= cobroDeServicios){
+            throw new ExcepcionFondosInsuficientes();
+        }else{
+                dineroDisponible += - cobroDeServicios;
+        }
     }
-    
-
 
 }

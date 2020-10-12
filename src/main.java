@@ -24,7 +24,13 @@ public class main{
         NormalTwitsh nt = new NormalTwitsh();
         NormalSpootify ns = new NormalSpootify();
         NormalHammazon nh = new NormalHammazon();
-
+        
+        System.out.println("MAIN FUNCIONANDO");
+        Usuario lupe = new PagoEnEfectivo(14, "lupe");
+        t.contratarnormal(lupe);
+        t.cobrar();
+        
+        
     }
     
     
