@@ -1,5 +1,4 @@
-package src; 
-import src.*;
+
 public class PremiumSpootify implements Plan{
 
     @Override

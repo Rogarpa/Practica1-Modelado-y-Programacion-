@@ -1,11 +1,10 @@
-package src;
-import src.*;
+
 public interface Usuario{
-    
+
     /**
     *Se encarga de cobrar al usuario una cifra. Si el usuario no tiene fondos suficiente lanza la excepcion
     *@param cobrodiariodeservicio el cobro solicitado.
-    *@throws FondosInsuficientes si el Usuario no es capaz de pagar el cobro. 
+    *@throws FondosInsuficientes si el Usuario no es capaz de pagar el cobro.
     */
     void cobro(int cobroDiarioDeServicio);
 
@@ -21,8 +20,15 @@ public interface Usuario{
      */
     void eliminarServicio(Servicio s);
 
-    //FALTA DOCUMENTAR
+    /**
+    *Método para obtener el nombre del usuario.
+    */
     public String getNombre();
 
-    public void mensaje();
+
+    /**
+    *Método que permite enviar mensajes a los usuarios.
+    *@param c el mensaje que se le enviará.
+    */
+    public void mensaje(String c);
 }
