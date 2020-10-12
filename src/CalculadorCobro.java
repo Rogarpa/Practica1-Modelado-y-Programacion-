@@ -18,7 +18,7 @@ public class CalculadorCobro{
     *@return el nivel de la Suscripcion del usuario.
     */
     public int calcularnivelsuscripcion(){
-        return 0;
+        return cobroPlanACalcular.calcularCobro();
     }
 
 }

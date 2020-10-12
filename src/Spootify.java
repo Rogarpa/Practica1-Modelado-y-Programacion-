@@ -1,3 +1,4 @@
+package src;    
 import src.*;
 import java.util.LinkedList;
 public class Spootify extends Suscripcion{
@@ -10,6 +11,12 @@ public class Spootify extends Suscripcion{
     public Spootify(){
         contratosActivos = new LinkedList<>();
         contratosPasivos = new LinkedList<>(); 
+        sugerencias = new String[5];
+        sugerencias[0]="Un viaje al pasado,escucha Top hits 2012.";
+        sugerencias[1]="Escuchado recientemente:Twenty One Pilots.";
+        sugerencias[2]="Podcast Nuevo:Asesinos Seriales.";
+        sugerencias[3]="Octubre comienza y nos resignamos escucha en Podcast: Sectas.";
+        sugerencias[4]="Preparamos tu Daily Mix:Daily Mix 3.";
     }
     
 
@@ -29,16 +36,6 @@ public class Spootify extends Suscripcion{
     */
     public void contratarpremium(Usuario contratador){
         super.contratarAux(bienvenidoDeVuelta, "premium de Spootify", tipoSuscripcion, contratador, new PremiumSpootify());
-    }
-    
-    @Override
-    public void enviarRecomendaciones(){
-        sugerencias = new String[5];
-        sugerencias[0]="Un viaje al pasado,escucha Top hits 2012.";
-        sugerencias[1]="Escuchado recientemente:Twenty One Pilots.";
-        sugerencias[2]="Podcast Nuevo:Asesinos Seriales.";
-        sugerencias[3]="Octubre comienza y nos resignamos escucha en Podcast: Sectas.";
-        sugerencias[4]="Preparamos tu Daily Mix:Daily Mix 3.";
     }
     
     @Override

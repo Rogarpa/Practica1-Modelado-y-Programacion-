@@ -13,6 +13,10 @@ public abstract class Suscripcion implements Servicio{
     * Se encarga de enviar a los Usuarios mediante su método mensaje() una recomendación.
     */
     public void enviarRecomendaciones(){
+        int i = 0;
+        for(Contrato aRecomendar: contratosActivos){
+            aRecomendar.contratador.mensaje("Te recomendamos: " + sugerencias[i++]);
+        }
     }
     
     protected void contratarAux(String mensajeRebienvenida, String nombrePlan, String mensajeSuscripciónNueva, Usuario contratador, Plan planASuscribir){
@@ -46,11 +50,12 @@ public abstract class Suscripcion implements Servicio{
             try {
                 usuarioACobrar.cobro(pago);
             } catch (Exception e) {
-                System.out.println(usuarioACobrar.getNombre() + "Agotó su dinero");
+                System.out.println(usuarioACobrar.getNombre() + "agotó su dinero");
                 dejarContratar(usuarioACobrar);
             }
             
             System.out.println(String.format(mensajecobro, pago) + " " + c.nombrePlan);
+            enviarRecomendaciones();
             
         }
         

@@ -32,7 +32,7 @@ public class PagoEnEfectivo implements Usuario{
     
     @Override
     public void mensaje(String mensajeAImprimir){
-        System.out.println(mensaje);
+        System.out.println(mensajeAImprimir);
     }
 
     @Override

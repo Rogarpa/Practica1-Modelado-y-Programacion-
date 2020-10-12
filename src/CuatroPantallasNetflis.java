@@ -1,7 +1,7 @@
 
 package src; 
 import src.*; 
-public class TresPantallasNetflis implements Plan{
+public class CuatroPantallasNetflis implements Plan{
 
     @Override
     public int calcularCobro(){
