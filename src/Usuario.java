@@ -1,5 +1,4 @@
-package src; 
-import src.*;
+
 public interface Usuario{
 
     /**

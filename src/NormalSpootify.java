@@ -1,6 +1,5 @@
 
-package src; 
-import src.*; 
+ 
 public class NormalSpootify implements Plan{
 
     @Override

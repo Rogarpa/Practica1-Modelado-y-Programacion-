@@ -1,5 +1,4 @@
-package src; 
-import src.*; 
+ 
 import java.util.List;
 public abstract class Suscripcion implements Servicio{
     protected List<Contrato> contratosActivos;
@@ -17,6 +16,7 @@ public abstract class Suscripcion implements Servicio{
         for(Contrato aRecomendar: contratosActivos){
             aRecomendar.contratador.mensaje(sugerencias[0] + " te recomienda " + aRecomendar.contratador.getNombre() + ": " + sugerencias[i++]);
         }
+        System.out.println("\n");
     }
     
     protected void contratarAux(String mensajeRebienvenida, String nombrePlan, String mensajeSuscripciónNueva, Usuario contratador, Plan planASuscribir){
@@ -50,24 +50,25 @@ public abstract class Suscripcion implements Servicio{
             try {
                 usuarioACobrar.cobro(pago);
             } catch (Exception e) {
-                System.out.println(usuarioACobrar.getNombre() + "agotó su dinero");
+                System.out.println(usuarioACobrar.getNombre() + " no puede pagar $" + pago + " de " + c.nombrePlan);
                 dejarContratar(usuarioACobrar);
+                return;
             }
             
-            System.out.println(String.format(mensajecobro, pago) + " " + c.nombrePlan + " de " + usuarioACobrar.getNombre());
+            System.out.println(String.format(mensajecobro, pago) + " " + c.nombrePlan + " de " + usuarioACobrar.getNombre() + "\n");
             enviarRecomendaciones();
             
         }
         
     }
     
-    public void dejarContratarAux(Usuario  usuarioADescontratar, Servicio aEliminarEnUsuario, String mensajeDespedida){
+    protected void dejarContratarAux(Usuario  usuarioADescontratar, Servicio aEliminarEnUsuario, String mensajeDespedida){
         usuarioADescontratar.eliminarServicio(aEliminarEnUsuario);
         for(Contrato c: contratosActivos){
             if(c.contratador == usuarioADescontratar){
                 contratosActivos.remove(usuarioADescontratar);
                 contratosPasivos.add(usuarioADescontratar);
-                System.out.println(mensajeDespedida + " " + usuarioADescontratar.getNombre());   
+                System.out.println(mensajeDespedida + " " + usuarioADescontratar.getNombre() + "\n");   
             }                                
         }
     }

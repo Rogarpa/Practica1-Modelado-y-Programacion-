@@ -1,6 +1,5 @@
 
-package src; 
-import src.*; 
+ 
 import java.util.LinkedList;
 public class Netflis extends Suscripcion{
 

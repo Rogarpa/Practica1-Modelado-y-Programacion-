@@ -1,11 +1,10 @@
-package src; 
-import src.*;
+
 import java.util.LinkedList;
 public class Twitsh extends Suscripcion{
     
     String bienvenidoDeVuelta = "Bienvenido de vuelta a Twitsh ";
     String tipoSuscripcion = "Gracias por suscribirte al plan";
-    String mensajecobro = "Se cobraron %d de el plan";
+    String mensajecobro = "Se cobraron $%d de el plan";
     String mensajeDespedida = "Lamentamos que dejes el servicio de Twitsh";
     
     public Twitsh(){

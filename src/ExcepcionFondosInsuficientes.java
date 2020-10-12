@@ -1,5 +1,4 @@
-package src; 
-import src.*; 
+ 
 
 /**
  * Clase para excepciones de índices de lista inválidos.
