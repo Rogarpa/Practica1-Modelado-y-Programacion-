@@ -14,13 +14,14 @@ public class Yutube extends Suscripcion {
     */
     public Yutube(){
         contratosActivos = new LinkedList<>();
-        contratosPasivos = new LinkedList<>();
-        sugerencias = new String[5];
-        sugerencias[0]="Prueba memes para ver los videos aleatorios más recientes.";
+        contratosPasivos = new LinkedList<>(); 
+        sugerencias = new String[6];
+        sugerencias[0]="Yutube";
         sugerencias[1]="Ver a continuación:Destacados de la Semana.";
         sugerencias[2]="¿No tienes tiempo de ver tu video?.Agregalo a la sección Ver más tarde.";
         sugerencias[3]="Para ver a tus Yutuberos preferidos ve a Suscripciones.";
         sugerencias[4]="Revisa tu historial por si no terminaste de ver un video.";
+        sugerencias[5]="Prueba memes para ver los videos aleatorios más recientes.";
     }
 
 

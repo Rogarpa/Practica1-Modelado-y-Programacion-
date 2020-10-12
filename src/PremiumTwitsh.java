@@ -1,6 +1,5 @@
 
-package src; 
-import src.*; 
+ 
 public class PremiumTwitsh implements Plan{
 
     @Override

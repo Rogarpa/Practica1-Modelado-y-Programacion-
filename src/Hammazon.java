@@ -14,13 +14,14 @@ public class Hammazon extends Suscripcion{
     */
     public Hammazon(){
         contratosActivos = new LinkedList<>();
-        contratosPasivos = new LinkedList<>();
-        sugerencias = new String[5];
-        sugerencias[0]="Agregados Recientemente:Carnival Row Season 1,La casa de papel.";
+        contratosPasivos = new LinkedList<>(); 
+        sugerencias = new String[6];
+        sugerencias[0]="Hammazon";
         sugerencias[1]="Tiempo de Terror:Halloween Season 1.";
         sugerencias[2]="Agregado recientemente: Malcolm in the Middle Season 3.";
         sugerencias[3]="Un nuevo episodio cada semana:The Boys.";
         sugerencias[4]="Para los amantes del Terror:The Shinning.";
+        sugerencias[5]="Agregados Recientemente:Carnival Row Season 1,La casa de papel.";
     }
 
     /**

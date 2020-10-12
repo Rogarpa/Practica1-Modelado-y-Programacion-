@@ -1,6 +1,5 @@
 
-package src; 
-import src.*; 
+ 
 import java.util.LinkedList;
 public class Netflis extends Suscripcion{
 
@@ -17,12 +16,13 @@ public class Netflis extends Suscripcion{
         contratosActivos = new LinkedList<>();
         contratosPasivos = new LinkedList<>(); 
         
-        sugerencias = new String[5];
-        sugerencias[0]="Agregado recientemente en Accion y Aventura:Star Wars:Clone Wars.";
+        sugerencias = new String[6];
+        sugerencias[0]="Netflis";
         sugerencias[1]="No sabes qué ver, prueba Una película de huevos.";
         sugerencias[2]="Prueba nuestro catalogo de Comedia.";
         sugerencias[3]="Nosotros los Nobles en Comedia.";
         sugerencias[4]="Prueba la nueva función de Shuffle,por si te aburriste.";
+        sugerencias[5]="Agregado recientemente en Accion y Aventura:Star Wars:Clone Wars.";
         
     }
     

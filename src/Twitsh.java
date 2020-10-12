@@ -1,11 +1,10 @@
-package src;
-import src.*;
+
 import java.util.LinkedList;
 public class Twitsh extends Suscripcion{
-
-    String bienvenidoDeVuelta = "Bienvenido de vuelta a Twitsh";
+    
+    String bienvenidoDeVuelta = "Bienvenido de vuelta a Twitsh ";
     String tipoSuscripcion = "Gracias por suscribirte al plan";
-    String mensajecobro = "Se cobraron %d de el plan";
+    String mensajecobro = "Se cobraron $%d de el plan";
     String mensajeDespedida = "Lamentamos que dejes el servicio de Twitsh";
 
     /**
@@ -13,13 +12,14 @@ public class Twitsh extends Suscripcion{
     */
     public Twitsh(){
         contratosActivos = new LinkedList<>();
-        contratosPasivos = new LinkedList<>();
-        sugerencias = new String[5];
-        sugerencias[0]="Como nuevo streamer tenemos a tripasecatime";
+        contratosPasivos = new LinkedList<>(); 
+        sugerencias = new String[6];
+        sugerencias[0]="Twitsh";
         sugerencias[1]="Prueba en la Sección de: Nuevos Streamers";
         sugerencias[2]="¿Empezando tu experiencia en Twitsh?.Prueba Aleatorios.";
         sugerencias[3]="Para ver lo que suben tus streamers favoritos:Ve a la sección notificaciones.";
         sugerencias[4]="¿No encuentras a tu streamer?Prueba en la pestaña Buscar";
+        sugerencias[5]="Como nuevo streamer tenemos a tripasecatime";
     }
 
         /**

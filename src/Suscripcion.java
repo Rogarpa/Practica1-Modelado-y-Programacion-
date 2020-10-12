@@ -1,5 +1,4 @@
-package src;
-import src.*;
+ 
 import java.util.List;
 public abstract class Suscripcion implements Servicio{
     protected List<Contrato> contratosActivos;
@@ -13,10 +12,11 @@ public abstract class Suscripcion implements Servicio{
     * Se encarga de enviar a los Usuarios mediante su método mensaje() una recomendación.
     */
     public void enviarRecomendaciones(){
-        int i = 0;
+        int i = 1;
         for(Contrato aRecomendar: contratosActivos){
-            aRecomendar.contratador.mensaje("Te recomendamos: " + sugerencias[i++]);
+            aRecomendar.contratador.mensaje(sugerencias[0] + " te recomienda " + aRecomendar.contratador.getNombre() + ": " + sugerencias[i++]);
         }
+        System.out.println("\n");
     }
 
     /**
@@ -35,13 +35,13 @@ public abstract class Suscripcion implements Servicio{
         Contrato nuevoContrato = new Contrato(contratador, planASuscribir, nombrePlan);
 
         if(contratosPasivos.contains(contratador)){
-            System.out.println(mensajeRebienvenida);
+            System.out.println(mensajeRebienvenida + contratador.getNombre());
             contratador.agregarServicio(this);
             contratosPasivos.remove(contratador);
         }
-
-
-        System.out.println(mensajeSuscripciónNueva + " "+ nombrePlan);
+        
+        
+        System.out.println(mensajeSuscripciónNueva + " "+ nombrePlan + " " + contratador.getNombre() );
         contratosActivos.add(nuevoContrato);
     }
 
@@ -62,11 +62,12 @@ public abstract class Suscripcion implements Servicio{
             try {
                 usuarioACobrar.cobro(pago);
             } catch (Exception e) {
-                System.out.println(usuarioACobrar.getNombre() + "agotó su dinero");
+                System.out.println(usuarioACobrar.getNombre() + " no puede pagar $" + pago + " de " + c.nombrePlan);
                 dejarContratar(usuarioACobrar);
+                return;
             }
-
-            System.out.println(String.format(mensajecobro, pago) + " " + c.nombrePlan);
+            
+            System.out.println(String.format(mensajecobro, pago) + " " + c.nombrePlan + " de " + usuarioACobrar.getNombre() + "\n");
             enviarRecomendaciones();
 
         }
@@ -85,8 +86,8 @@ public abstract class Suscripcion implements Servicio{
             if(c.contratador == usuarioADescontratar){
                 contratosActivos.remove(usuarioADescontratar);
                 contratosPasivos.add(usuarioADescontratar);
-                System.out.println(mensajeDespedida + " " + usuarioADescontratar.getNombre());
-            }
+                System.out.println(mensajeDespedida + " " + usuarioADescontratar.getNombre() + "\n");   
+            }                                
         }
     }
 
