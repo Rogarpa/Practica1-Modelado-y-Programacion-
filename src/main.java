@@ -1,10 +1,11 @@
-package src;
-import src.*;
+
+package src; 
+import src.*; 
 public class main{
-    
+
     public static void main(String[] args){
         Yutube y = new Yutube();
-        Usuario u = new PagoEnEfectivo(12, "s"); 
+        Usuario u = new PagoEnEfectivo(12, "s");
         Twitsh t = new Twitsh();
         Suscripcion s = new Yutube();
         Spootify ss = new Spootify();
@@ -26,6 +27,6 @@ public class main{
         NormalHammazon nh = new NormalHammazon();
 
     }
-    
-    
+
+
 }

@@ -1,6 +1,6 @@
 package src; 
+import src.*; 
 public interface Plan{
-    
-    //FALTA DOCUMENTAR
+
     int calcularCobro();
 }
